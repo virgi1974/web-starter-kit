@@ -11,7 +11,7 @@ class Layout extends React.Component {
         // <Contact id={info.id} name={info.name} email={info.email} />
 
         // splat operator to pass the props
-        <Contact {...info}/>
+        <Contact key={info.id} {...info}/>
       )}
       </div>
     );
